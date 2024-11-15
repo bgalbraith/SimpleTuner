@@ -39,6 +39,9 @@ poetry install
 
 # Linux with ROCM
 poetry install -C install/rocm
+
+# If poetry install hangs, you may need to disable keyring use
+poetry config keyring.enabled false 
 ```
 
 #### NVIDIA Hopper / Blackwell follow-up steps
